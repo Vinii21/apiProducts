@@ -1,0 +1,362 @@
+p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+  }
+/* =================================================== */
+/*==================== Button Add y Form ========================= */
+/* =================================================== */
+.bnt-add{
+    border: 2px solid rgb(21, 194, 247);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #707070;
+    color: #fff;
+    width: 130px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+.bnt-add i{
+    color: rgb(21, 194, 247);
+    margin-right: 10px;
+}
+
+.bnt-add:hover{
+    border: 2px solid rgba(21, 194, 247, 0.525);
+    background-color: #6c85ab;
+    transform: scale(1.1);
+}
+
+.form__container{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #d1cfcf73;
+    backdrop-filter: blur(2px);
+}
+
+form{
+    box-shadow: 2px 2px 8px #00000093;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+form h2{
+    width: 100%;
+}
+
+form i{
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: #f0eeee;
+    transition: all .5s ease;
+    border: 2px solid #000;
+}
+
+form i:hover{
+    background-color: rgb(247, 55, 21);
+    color: #fff;
+    transform: rotate(180deg);
+}
+
+form input{
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+form .input{
+    border: 2px solid #a8a6a68e;
+    padding: 10px;
+    background-color: #f0eeee;
+    border-radius: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.form__container .form__btn{
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(52, 85, 138);
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.form__container .form__btn:hover{
+    transform: scale(0.9);
+}
+
+
+/* =================================================== */
+/*==================== Cards ========================= */
+/* =================================================== */
+
+.products__container{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product__card{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 8px #00000065;
+}
+
+.product__card h2{
+    padding: 20px;
+    border-bottom: 2px solid #929191;
+}
+
+.product__card ul{
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.product__card li{
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__card-btns{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.product__card-btns button{
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .7;
+    transition: all .1s ease;
+}
+
+.product__card-btns button:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.product__card-btns button:nth-child(1){
+    color: #fff;
+    background-color: rgb(247, 55, 21);
+}
+
+.product__card-btns button:nth-child(2){
+    color: #fff;
+    background-color: rgb(21, 194, 247);
+}
+
+/* =================================================== */
+/*==================== Modal ========================= */
+/* =================================================== */
+
+.container__modal{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000008e;
+}
+
+.container__modal .modal{
+    background-color: #fff;
+    width: 300px;
+    position: relative;
+    border: 2px solid;
+}
+
+.container__modal .modal h3{
+    padding: 20px;
+}
+
+.container__modal .modal i{
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: rgb(247, 55, 21);
+    transition: all .1s linear;
+}
+
+.container__modal .modal i:hover{
+    transform: scale(2) rotate(60deg);
+}
+
+/* =================================================== */
+/*==================== Footer ========================= */
+/* =================================================== */
+
+footer {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 20px;
+    background-image: url("/img/frame2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  footer span{
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 5px;
+    position: relative;
+    left: -10px;
+    z-index: 0;
+  }
+  
+  footer img{
+    position: relative;
+    z-index: 1;
+    width: 35px;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation: logo 2s linear infinite;
+  }
+
+  @keyframes logo {
+    0%{
+      transform: scale(1);
+    }
+    20%{
+      transform: scale(0.9);
+    }
+    40%{
+      transform: scale(0.8);
+    }
+    80%{
+      transform: scale(0.9);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+  }
+
+/* =================================================== */
+/*==================== Media Queries ========================= */
+/* =================================================== */
+
+@media only screen and (min-width: 600px) {
+    .products__container{
+        max-width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .products__container{
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: 25px;
+    }
+
+    form{
+        width: 300px;
+        height: 350px;
+        justify-content: space-around;
+        font-size: 20px;
+    }
+
+    form h2{
+        font-size: 28px;
+    }
+
+    
+    form i{
+        right: -20px;
+        top: -20px;
+        font-size: 50px;
+    }
+    
+    form .input{
+        width: 80%;
+    }
+    
+    .form__container .form__btn{
+        padding: 5px;
+        font-size: 18px;
+    }
+
+    .container__modal .modal{
+        font-size: 30px;
+        border: 5px double #000;
+    }
+    
+    .container__modal .modal i{
+        font-size: 50px;
+    }
+    
+    .container__modal .modal i:hover{
+        transform: scale(2) rotate(60deg);
+    }
+}
