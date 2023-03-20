@@ -240,13 +240,11 @@ input[type=number] { -moz-appearance:textfield; }
 
 footer {
     position: absolute;
-    z-index: 1;
     bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    height: 400px;
     padding-bottom: 20px;
     background-image: url("/img/frame2.png");
     background-position: center;
