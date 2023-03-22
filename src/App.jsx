@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="App">
-      <button className='bnt-add' onClick={()=>setShowForm(!showForm)}><i className='bx bx-plus-medical'></i>Add user</button>
+      <button className='bnt-add' onClick={()=>setShowForm(!showForm)}><i className='bx bx-plus-medical'></i>Add product</button>
       {
         showForm && 
         <ProductForm 
